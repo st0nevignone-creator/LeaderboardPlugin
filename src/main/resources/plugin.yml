@@ -1,0 +1,21 @@
+name: LeaderboardPlugin
+version: '${project.version}'
+main: it.leaderboardPlugin.LeaderboardPlugin
+api-version: '1.21'
+description: Classifiche personalizzabili con ologrammi fluttuanti.
+authors: []
+prefix: LeaderboardPlugin
+
+commands:
+  lb:
+    description: Gestione classifiche
+    usage: /lb <create|delete|list|update|addstat|removestat|setvalue>
+    aliases: [leaderboard, classifica]
+
+permissions:
+  leaderboard.admin:
+    description: Gestione completa delle classifiche
+    default: op
+  leaderboard.use:
+    description: Visualizza classifiche
+    default: true

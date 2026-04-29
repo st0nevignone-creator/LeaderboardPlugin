@@ -1,0 +1,41 @@
+# ==========================================
+#     LeaderboardPlugin - Configurazione
+# ==========================================
+
+# Ogni quanti minuti aggiornare gli ologrammi (default: 60 = 1 ora)
+update-interval-minutes: 60
+
+# Quanti giocatori mostrare in classifica (max per ologramma)
+top-size: 10
+
+# Formato delle righe dell'ologramma
+# Placeholder: {pos} {player} {value}
+formats:
+  title:    "&6&l✦ {title} ✦"
+  first:    "&6#1 &e{player} &7- &f{value}"
+  second:   "&7#2 &f{player} &7- &f{value}"
+  third:    "&c#3 &f{player} &7- &f{value}"
+  default:  "&8#{pos} &7{player} &8- &7{value}"
+  empty:    "&8Nessun dato ancora."
+  footer:   "&8Aggiornato ogni ora"
+
+# Altezza testo ologramma (spazio tra le righe in blocchi)
+line-height: 0.28
+
+# ==========================================
+#         CLASSIFICHE PREDEFINITE
+# ==========================================
+# Ogni classifica ha:
+#   title       - nome visualizzato
+#   stat        - tipo di statistica (KILLS, DEATHS, KD, BLOCKS_MINED, TIME_ONLINE, CUSTOM)
+#   custom-id   - solo per CUSTOM, identificatore unico
+#   unit        - suffisso del valore (es. "kill", "ore", "blocchi")
+#   ascending   - true = chi ha meno è primo (es. morti)
+#   location    - dove è piazzato l'ologramma (impostato con /lb create)
+
+leaderboards: {}
+
+# ==========================================
+#              DATI GIOCATORI
+# ==========================================
+# I dati vengono salvati automaticamente in playerdata.yml
